@@ -15,10 +15,6 @@ def tenta_mudar_para_float(valor):
         return None
 
 
-def soma(x, y):
-    return x + y
-
-
 def subtracao(x, y):
     return x - y
 
@@ -64,7 +60,7 @@ while True:
     
     if operador == "1":
         # Soma
-        resultado = sum(numero_um_float, numero_dois_float)
+        resultado = numero_um_float + numero_dois_float
         print(f"Resultado: {resultado:.2f}")
         break
             
