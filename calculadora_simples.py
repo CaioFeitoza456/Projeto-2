@@ -6,6 +6,8 @@ básicas, como adição, subtração,
 divisão e multiplicação.
 """
 
+import os, time
+
 
 def tenta_mudar_para_float(valor):
     try:
