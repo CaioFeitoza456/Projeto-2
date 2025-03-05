@@ -7,17 +7,12 @@ divisão e multiplicação.
 """
 
 
-def tenta_mudar_tipo(valor):
+def tenta_mudar_para_float(valor):
     try:
-        # Tenta transformar o índice digitado
-        # pelo usuário em um número inteiro
         return float(valor)
        
     except ValueError:
-        # Se der erro de valor(o usuário passar
-        # uma string, por exemplo) ele cai aqui
-        # na exceção
-        print("Digite apenas números.")
+        return None
 
 
 def soma(x, y):
@@ -38,7 +33,7 @@ def divisao(x, y):
 
 while True:
     primeiro_numero = input("Digite o primeiro número: ")
-    numero_um_float = tenta_mudar_tipo(primeiro_numero)
+    numero_um_float = tenta_mudar_para_float(primeiro_numero)
         
     if numero_um_float is None:
             continue
@@ -47,7 +42,7 @@ while True:
     
 while True:
     segundo_numero = input("Digite o segundo número: ")
-    numero_dois_float = tenta_mudar_tipo(segundo_numero)
+    numero_dois_float = tenta_mudar_para_float(segundo_numero)
         
     if numero_dois_float is None:
         continue
