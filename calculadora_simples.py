@@ -15,10 +15,6 @@ def tenta_mudar_para_float(valor):
         return None
 
 
-def divisao(x, y):
-    return x / y
-
-
 while True:
     primeiro_numero = input("Digite o primeiro número: ")
     numero_um_float = tenta_mudar_para_float(primeiro_numero)
@@ -70,7 +66,7 @@ while True:
             
     elif operador == "4":
         # Divisão
-        resultado = divisao(numero_um_float, numero_dois_float)
+        resultado = numero_um_float / numero_dois_float
         print(f"Resultado: {resultado}")
         break
         
