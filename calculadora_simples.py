@@ -18,19 +18,20 @@ def tenta_mudar_para_float(valor):
 while True:
     primeiro_numero = input("Digite o primeiro número: ")
     numero_um_float = tenta_mudar_para_float(primeiro_numero)
-        
-    if numero_um_float is None:
-            continue
-        
-    break
     
-while True:
     segundo_numero = input("Digite o segundo número: ")
     numero_dois_float = tenta_mudar_para_float(segundo_numero)
+    
+    if numero_um_float is None or \
+       numero_dois_float is None:
         
-    if numero_dois_float is None:
+        print("Digite apenas números.")
+        
+        time.sleep(2)
+        os.system("clear")
+        
         continue
-        
+    
     break
 
 
