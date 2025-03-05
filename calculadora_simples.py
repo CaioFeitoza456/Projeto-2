@@ -15,10 +15,6 @@ def tenta_mudar_para_float(valor):
         return None
 
 
-def subtracao(x, y):
-    return x - y
-
-
 def multiplicacao(x, y):
     return x * y
 
@@ -66,7 +62,7 @@ while True:
             
     elif operador == "2":
         # Subtração
-        resultado = subtracao(numero_um_float, numero_dois_float)
+        resultado = numero_um_float - numero_dois_float
         print(f"Resultado: {resultado:.2f}")
         break
             
