@@ -41,10 +41,10 @@ while True:
     
     print("""
       ◇◇MENU DE OPÇÕES◇◇
-      1. Adição (+)
-      2. Subtração (-)
-      3. Multiplicação (*)
-      4. Divisão(/)
+      1. Adição
+      2. Subtração
+      3. Multiplicação
+      4. Divisão
     """)
     
     operador = input("Digite aqui: ")
